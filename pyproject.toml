@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yt-agent"
+version = "0.1.0"
+description = "Coding-first AI agent for daily YouTube technical content."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "AdmnWizard AI LLC"}]
+dependencies = []
+
+[project.scripts]
+yt-agent = "yt_agent.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
